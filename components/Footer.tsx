@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12" role="contentinfo">
+    <footer className="bg-black text-white pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12 animate-fade-up" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 border-b border-white/10 pb-12 sm:pb-16 mb-8 sm:mb-12">
           <div className="sm:col-span-2 md:col-span-1">
@@ -13,11 +13,10 @@ export default function Footer() {
                 alt="VGA Holdings Logo"
                 width={200}
                 height={200}
-                className="h-8 sm:h-10 w-auto brightness-0 invert"
-                sizes="40px"
+                className="h-12 sm:h-14 md:h-16 w-auto"
+                sizes="64px"
               />
             </Link>
-            <p className="text-white/60 text-xs sm:text-sm leading-relaxed">Kingdom of Bahrain</p>
           </div>
 
           <div>

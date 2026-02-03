@@ -50,7 +50,7 @@ export default function Services() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Capabilities
           </span>
-          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1F2A36] mb-4">Our Services</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100">Our Services</h2>
           <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl">
             We operate with responsibility—to our clients, communities, and the environment.
           </p>
@@ -60,7 +60,8 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-5 sm:p-6 md:p-8 lg:p-10 hover:bg-white transition-colors duration-300 group"
+              className="bg-white p-5 sm:p-6 md:p-8 lg:p-10 hover:bg-white transition-colors duration-300 group animate-scale-in"
+              style={{ animationDelay: `${index * 80 + 100}ms` }}
             >
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#1F2A36] group-hover:text-[#d4af37] transition-colors">
                 <iconify-icon icon={service.icon} width="24" height="24" stroke-width="1.5" className="sm:w-7 sm:h-7 md:w-8 md:h-8" />

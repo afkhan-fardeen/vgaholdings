@@ -41,7 +41,7 @@ export default function Portfolio() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
           </span>
-          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1F2A36] mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100">
             Investment Portfolio
           </h2>
           <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mb-4">
@@ -55,7 +55,10 @@ export default function Portfolio() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center">
           {portfolioItems.map((item, index) => {
             const content = (
-              <div className="h-16 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center border border-[#D9D9D9] bg-white hover:border-[#d4af37] hover:shadow-lg transition-all duration-300 p-2 sm:p-3 md:p-4 group">
+              <div
+                className="h-16 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center border border-[#D9D9D9] bg-white hover:border-[#d4af37] hover:shadow-lg transition-all duration-300 p-2 sm:p-3 md:p-4 group animate-scale-in"
+                style={{ animationDelay: `${index * 70 + 120}ms` }}
+              >
                 <div className="relative w-full h-full">
                   <Image
                     src={item.logo}

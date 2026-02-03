@@ -31,7 +31,7 @@ export default function Hero() {
       {/* Video Overlay */}
       <div className="absolute inset-0 bg-black/30 z-[5]" />
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-12 sm:bottom-16 md:bottom-20 left-1/2 -translate-x-1/2 z-10">
+      <div className="absolute bottom-12 sm:bottom-16 md:bottom-20 left-1/2 -translate-x-1/2 z-10 animate-fade-in anim-delay-200">
         <a
           href="#about"
           className="flex flex-col items-center text-white hover:text-[#d4af37] transition-colors animate-bounce focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:ring-offset-2 rounded px-3 py-2"

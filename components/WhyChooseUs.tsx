@@ -34,11 +34,11 @@ export default function WhyChooseUs() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Value Proposition
           </span>
-          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1F2A36]">Why Choose Us?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">Why Choose Us?</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {reasons.map((reason, index) => (
-            <div key={index}>
+            <div key={index} className="animate-scale-in" style={{ animationDelay: `${index * 90 + 120}ms` }}>
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#d4af37]">
                 <iconify-icon icon={reason.icon} width="24" height="24" stroke-width="1.5" className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
               </div>

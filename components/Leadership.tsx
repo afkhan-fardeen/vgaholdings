@@ -60,7 +60,7 @@ export default function Leadership() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Leadership
           </span>
-          <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1F2A36]">Meet Our Leaders</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">Meet Our Leaders</h2>
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-8 sm:gap-y-12">
           {leaders.map((leader, index) => (

@@ -14,12 +14,16 @@ const clients = [
 export default function Clients() {
   return (
     <Section id="clients">
-        <h2 className="text-2xl sm:text-3xl font-medium tracking-tight text-[#1F2A36] mb-8 sm:mb-12 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-8 sm:mb-12 text-center animate-fade-up anim-delay-100">
           Meet Our Clients
         </h2>
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 items-center">
           {clients.map((client, index) => (
-            <div key={index} className="relative h-10 w-20 sm:h-12 sm:w-24 md:h-16 md:w-32">
+            <div
+              key={index}
+              className="relative h-10 w-20 sm:h-12 sm:w-24 md:h-16 md:w-32 animate-scale-in"
+              style={{ animationDelay: `${index * 60 + 120}ms` }}
+            >
               <Image
                 src={client.logo}
                 alt={`${client.name} logo`}
