@@ -8,7 +8,7 @@ const leaders = [
   {
     name: 'Terry Antoniadis',
     role: 'CEO',
-    image: '/images/sections/leadership/terry.png',
+    image: '/images/sections/leadership/terry-1.jpg',
     linkedin: 'https://www.linkedin.com/in/eleftherios-antoniadis-64675820',
   },
   {
