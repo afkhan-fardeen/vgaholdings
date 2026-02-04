@@ -56,6 +56,10 @@ export const metadata: Metadata = {
       'Established in 2014 in the Kingdom of Bahrain, VGA Holdings operates across oil & gas, chemical distribution, consultancy, brokerage, and strategic investment portfolios.',
     images: ['/logos/vgalogo.png'],
   },
+  icons: {
+    icon: '/images/favicons/favicon.ico',
+    shortcut: '/images/favicons/favicon.ico',
+  },
   robots: {
     index: true,
     follow: true,
