@@ -4,32 +4,32 @@ import Section from '@/components/Section'
 const portfolioItems = [
   {
     name: 'Playsy',
-    logo: '/images/Playsy-logo.jpg',
+    logo: '/images/sections/portfolio/Playsy-logo.jpg',
     url: 'https://www.playsy.com/',
   },
   {
     name: 'VGA Events',
-    logo: '/images/vga-events-logo.jpg',
+    logo: '/images/sections/portfolio/vga-events-logo.jpg',
     url: 'https://vga-events.com/',
   },
   {
     name: 'The Agency',
-    logo: '/images/agency-logo.jpg',
+    logo: '/images/sections/portfolio/agency-logo.jpg',
     url: 'https://vgaholdings.com/wp-content/uploads/2024/09/The-Agency-3-Step-System.pdf',
   },
   {
     name: 'Playbox',
-    logo: '/images/Playbox-Logo.jpg',
+    logo: '/images/sections/portfolio/Playbox-Logo.jpg',
     url: 'https://playboxbh.com/',
   },
   {
     name: 'Metakid',
-    logo: '/images/metakid-logo.jpg',
+    logo: '/images/sections/portfolio/metakid-logo.jpg',
     url: null,
   },
   {
     name: 'MoneyTree',
-    logo: '/images/Moneytree_logo.png',
+    logo: '/images/sections/portfolio/Moneytree_logo.png',
     url: 'https://vgaholdings.com/wp-content/uploads/2024/09/MoneyTree_2024.pdf',
   },
 ]
@@ -41,7 +41,7 @@ export default function Portfolio() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
           <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mb-4">

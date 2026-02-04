@@ -22,14 +22,15 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover parallax"
+        data-parallax="0.08"
         aria-label="VGA Holdings corporate video"
       >
         <source src="/videos/VGA_Holdings_Corporate_Video_1080P.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       {/* Video Overlay */}
-      <div className="absolute inset-0 bg-black/30 z-[5]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-white/10 z-[5]" />
       {/* Scroll Down Indicator */}
       <div className="absolute bottom-12 sm:bottom-16 md:bottom-20 left-1/2 -translate-x-1/2 z-10 animate-fade-in anim-delay-200">
         <a

@@ -8,19 +8,19 @@ const leaders = [
   {
     name: 'Terry Antoniadis',
     role: 'CEO',
-    image: '/images/Terry-pic.jpg',
+    image: '/images/sections/leadership/Terry-pic.jpg',
     linkedin: 'https://www.linkedin.com/in/eleftherios-antoniadis-64675820',
   },
   {
     name: 'Yana Antoniadis',
     role: 'Managing Director',
-    image: '/images/managingdirector.png',
+    image: '/images/sections/leadership/managingdirector.png',
     linkedin: 'https://www.linkedin.com/in/yana-antoniadis-a66817148/',
   },
   {
     name: 'Brett Paul Maclagan',
     role: 'Compliance Director',
-    image: '/images/compliancedirector.png',
+    image: '/images/sections/leadership/compliancedirector.png',
     linkedin: 'https://www.linkedin.com/in/brett-maclagan-b250975/',
   },
 ]
@@ -60,7 +60,7 @@ export default function Leadership() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Leadership
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">Meet Our Leaders</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Meet Our Leaders</h2>
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-8 sm:gap-y-12">
           {leaders.map((leader, index) => (

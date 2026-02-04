@@ -10,7 +10,6 @@ npm install
 2. Add your assets to the `public` folder:
    - All images referenced in components
    - Video file: `VGA_Holdings_Corporate_Video_1080P.mp4`
-   - See `public/README.md` for the complete list
 
 3. Run the development server:
 ```bash
@@ -71,7 +70,6 @@ npm start
 
 ## Notes
 
-- All content has been integrated from `copy.txt`
-- The design matches the original `generated-page.html` template
+- All content has been integrated into the current sections and data files
 - Images need to be added to the `public` folder
 - Video file should be optimized for web delivery

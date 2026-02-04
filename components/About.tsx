@@ -9,7 +9,7 @@ export default function About() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 animate-fade-up">
             Who We Are
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             About Us
           </h2>
           <p className="text-sm sm:text-base md:text-lg font-light text-[#4A4F55] leading-relaxed mb-3 sm:mb-4 md:mb-6">
@@ -23,10 +23,11 @@ export default function About() {
         <div className="w-full md:w-1/2">
           <div className="aspect-[4/3] bg-[#E5E7EB] w-full overflow-hidden relative mt-4 sm:mt-0 animate-scale-in anim-delay-200">
             <Image
-              src="/images/mtower.jpg"
+              src="/images/sections/about/mtower.jpg"
               alt="M Tower building"
               fill
-              className="object-cover"
+              className="object-cover parallax"
+              data-parallax="0.06"
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 50vw"
               loading="lazy"
             />

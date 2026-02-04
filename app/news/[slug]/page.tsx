@@ -47,7 +47,7 @@ export async function generateMetadata({
     openGraph: {
       title: news.title,
       description: news.content[0]?.substring(0, 160) || '',
-      images: news.images.map((img) => ({
+      images: (news.images.length ? news.images : [news.image]).map((img) => ({
         url: img,
         alt: news.title,
       })),
@@ -63,6 +63,14 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
   }
 
   const videoEmbedUrl = news.videoUrl ? getYouTubeEmbedUrl(news.videoUrl) : null
+  const imageCount = news.images.length
+  const gridClass =
+    imageCount <= 1
+      ? ''
+      : imageCount === 2
+        ? 'grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8'
+        : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8'
+  const itemClass = imageCount <= 1 ? 'relative w-full aspect-[16/9]' : 'relative w-full aspect-[4/3]'
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
@@ -74,7 +82,7 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
     <>
       <Header />
       <main>
-        <article className="py-8 sm:py-12 md:py-16 lg:py-24">
+        <article className="min-h-[100svh] snap-start py-8 sm:py-12 md:py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <Breadcrumbs items={breadcrumbs} />
 
@@ -83,21 +91,27 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
             </h1>
 
           {/* News Images */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8">
-            {news.images.map((image, index) => (
-              <div key={index} className="relative w-full h-48 sm:h-56 md:h-64">
-                <Image
-                  src={image}
-                  alt={`${news.title} - Image ${index + 1}`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  priority={index === 0}
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                />
-              </div>
-            ))}
-          </div>
+          {imageCount > 0 ? (
+            <div className={gridClass || 'mb-6 sm:mb-8'}>
+              {news.images.map((image, index) => (
+                <div key={index} className={itemClass}>
+                  <Image
+                    src={image}
+                    alt={`${news.title} - Image ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes={
+                      imageCount <= 1
+                        ? '(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 900px'
+                        : '(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw'
+                    }
+                    priority={index === 0}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                  />
+                </div>
+              ))}
+            </div>
+          ) : null}
 
           {videoEmbedUrl ? (
             <div className="relative w-full aspect-video mb-6 sm:mb-8">
@@ -107,6 +121,7 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
                 className="absolute inset-0 w-full h-full rounded-md"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
+                loading="lazy"
               />
             </div>
           ) : null}

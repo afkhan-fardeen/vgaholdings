@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Value Proposition
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">Why Choose Us?</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Why Choose Us?</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {reasons.map((reason, index) => (

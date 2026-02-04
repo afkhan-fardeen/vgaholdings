@@ -3,8 +3,11 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12 animate-fade-up" role="contentinfo">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+    <footer
+      className="min-h-[100svh] snap-start [scroll-snap-stop:always] bg-black text-white flex items-center pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12"
+      role="contentinfo"
+    >
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 border-b border-white/10 pb-12 sm:pb-16 mb-8 sm:mb-12">
           <div className="sm:col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center mb-4 sm:mb-6" aria-label="VGA Holdings Home">

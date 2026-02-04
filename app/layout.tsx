@@ -116,7 +116,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-[#F5F6F7] text-[#4A4F55]">
-        <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" strategy="beforeInteractive" />
+        <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" strategy="afterInteractive" />
         {children}
       </body>
     </html>

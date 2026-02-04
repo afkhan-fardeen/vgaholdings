@@ -13,6 +13,7 @@ import WhyChooseUs from '@/components/WhyChooseUs'
 import StealthVideo from '@/components/StealthVideo'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import ParallaxController from '@/components/ParallaxController'
 
 export const metadata: Metadata = {
   title: 'Home',
@@ -23,12 +24,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#d4af37] focus:text-white focus:rounded focus:font-medium"
-      >
-        Skip to main content
-      </a>
+      <ParallaxController />
       <Header />
       <main id="main-content">
         <Hero />

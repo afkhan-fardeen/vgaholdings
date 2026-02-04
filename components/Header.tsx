@@ -18,7 +18,10 @@ export default function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-md" role="banner">
+    <header
+      className="sticky top-0 z-50 bg-black/95 backdrop-blur-md"
+      role="banner"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" aria-label="VGA Holdings Home">

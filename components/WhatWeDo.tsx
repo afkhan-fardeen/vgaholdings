@@ -5,28 +5,28 @@ const capabilities = [
   {
     title: 'Oil and Gas Pipeline Services',
     description: 'Through proprietary and advanced mechanical pipeline technologies, we design, build, and deliver pipeline construction solutions that significantly outperform conventional welding methods.',
-    image: '/images/SL-Pipeline-Construction.jpeg',
+    image: '/images/sections/what-we-do/SL-Pipeline-Construction.jpeg',
     category: 'OIL AND GAS',
     percentage: 50,
   },
   {
     title: 'Chemical Distribution',
     description: 'VGA Chemicals is the exclusive distributor of Carbontech in the Kingdom of Bahrain. Carbontech is a global leader in composite repair systems, delivering engineered solutions for pipeline repairs and equipment rehabilitation.',
-    image: '/images/carbontechimg.jpg',
+    image: '/images/sections/what-we-do/carbontechimg.jpg',
     category: 'CHEMICAL DISTRIBUTION',
     percentage: 20,
   },
   {
     title: 'Consultancy Services',
     description: 'Our consultancy arm comprises multi-skilled advisors with experience across Finance & Banking, Oil, Gas & Energy, Transaction Advisory, Process Improvement, and Project & Programme Management.',
-    image: '/images/Consultancy-service.jpg',
+    image: '/images/sections/what-we-do/Consultancy-service.jpg',
     category: 'CONSULTANCY',
     percentage: 5,
   },
   {
     title: 'Brokerage Services',
     description: 'VGA connects Western markets with the Middle East and Far East through longstanding, trust-based relationships with industry leaders and governments.',
-    image: '/images/Brokerage.jpg',
+    image: '/images/sections/what-we-do/Brokerage.jpg',
     category: 'BROKERAGE',
     percentage: 5,
   },
@@ -39,7 +39,7 @@ export default function WhatWeDo() {
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Capabilities
           </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">What We Do</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">What We Do</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -49,7 +49,7 @@ export default function WhatWeDo() {
               className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group border border-[#D9D9D9] hover:border-[#d4af37]/30 hover:shadow-md animate-scale-in"
               style={{ animationDelay: `${index * 80 + 120}ms` }}
             >
-              <div className="w-full h-28 sm:h-36 md:h-32 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300">
+              <div className="w-full h-28 sm:h-36 md:h-32 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax" data-parallax="0.03">
                 <Image
                   src={capability.image}
                   alt={`${capability.title} - ${capability.category}`}

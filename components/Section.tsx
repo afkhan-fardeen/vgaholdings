@@ -16,7 +16,7 @@ const Section = forwardRef<HTMLElement, Props>(function Section(
     <section
       ref={ref}
       id={id}
-      className={`min-h-[100svh] snap-start [scroll-snap-stop:always] flex items-center py-12 sm:py-16 md:py-24 border-b border-[#D9D9D9] bg-white animate-fade-up ${className}`.trim()}
+      className={`min-h-[100svh] snap-start [scroll-snap-stop:always] flex items-center py-12 sm:py-16 md:py-24 bg-white ${className}`.trim()}
     >
       <div className={`w-full max-w-7xl mx-auto px-4 sm:px-6 ${containerClassName}`.trim()}>{children}</div>
     </section>

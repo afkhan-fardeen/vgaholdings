@@ -7,7 +7,7 @@ export default function News() {
   return (
     <Section id="news">
         <div className="flex justify-between items-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100">Latest News</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Latest News</h2>
         </div>
 
         <div className="flex flex-col gap-px bg-[#D9D9D9] border border-[#D9D9D9]">
@@ -18,7 +18,7 @@ export default function News() {
               style={{ animationDelay: `${index * 90 + 120}ms` }}
             >
               <div className="flex flex-col sm:flex-row gap-4 md:w-3/4 w-full">
-                <div className="relative w-full sm:w-40 md:w-48 lg:w-64 h-40 sm:h-28 md:h-32 lg:h-40 flex-shrink-0">
+                <div className="relative w-full sm:w-40 md:w-48 lg:w-64 h-40 sm:h-28 md:h-32 lg:h-40 flex-shrink-0 parallax" data-parallax="0.03">
                   <Image
                     src={item.image}
                     alt={item.title}

@@ -22,8 +22,12 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'A Greek management team with more than twenty years of experience in the elite Greek food and beverage industry is brought in to maintain the highest of standards. Our customer experience will guarantee repeat business, making this location a focal point in Bahrain.',
       'In April 2023 Greek Street got sold to the Bahrain Solymar Group, adding its Greek flavour to their portfolio.',
     ],
-    image: '/images/greek-street-news.png',
-    images: ['/images/greek-street-news.png', '/images/greek1image.png', '/images/GreekImage2.png'],
+    image: '/images/sections/news/greek-street-news.png',
+    images: [
+      '/images/sections/news/greek-street-news.png',
+      '/images/sections/news/greek1image.png',
+      '/images/sections/news/Greekimage2.png',
+    ],
   },
   'greek-street-tv': {
     title: 'GREEK STREET "MYKONOS" GOES LIVE ON BAHRAIN & GREEK TV CHANNELS.',
@@ -32,8 +36,8 @@ export const newsBySlug: Record<string, NewsArticle> = {
     content: [
       "Watch Greek Street on Greece's No1 TV station \"ALPHA TV\" where questions and answers are made on how beautiful the Kingdom of Bahrain is and how friendly the Bahraini people are. In essence Greece is being promoted to our citizens of Bahrain which can travel and have a taste of \"Mykonos\", Greece without even leaving the country.",
     ],
-    image: '/images/alpha-live.png',
-    images: ['/images/alpha-live.png'],
+    image: '/images/sections/news/alpha-live.png',
+    images: ['/images/sections/news/alpha-live.png'],
     videoUrl: 'https://www.youtube.com/watch?v=AgXjfCbAdhA',
   },
   'vga-chemicals-carbontech': {
@@ -47,8 +51,12 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'Carbontech composite systems are the developers and manufacturers of engineered composite materials formulated to restore critical assets back to the original design specifications. Our systems are compliant with engineering codes: ISO TS-24817 and ASME Pcc2 and are TUV accredited.',
       'If you have any inquiry regarding the Revowrap systems please feel free to get in touch with us.',
     ],
-    image: '/images/carbontech.png',
-    images: ['/images/cbns1.jpg', '/images/cbn2.jpg', '/images/cbn3.jpg'],
+    image: '/images/sections/news/carbontech.png',
+    images: [
+      '/images/sections/news/cbn1.jpg',
+      '/images/sections/news/cbn2.jpg',
+      '/images/sections/news/cbn3.jpg',
+    ],
   },
   'vga-consultants-arthur-little': {
     title: 'VGA CONSULTANTS SIGN AGREEMENT WITH ARTHUR D. LITTLE IN SAUDI ARABIA.',
@@ -66,8 +74,8 @@ export const newsBySlug: Record<string, NewsArticle> = {
       '• Professional Training for employees and Executives',
       '• Merger & Acquisition Advisory',
     ],
-    image: '/images/arthur.png',
-    images: ['/images/arthur.png', '/images/arthur.png', '/images/arthur.png'],
+    image: '/images/sections/news/arthur.png',
+    images: ['/images/sections/news/arthur.png'],
   },
   'stealth-lock-new-generation': {
     title: 'STEALTH-LOCK "NEW GENERATION" LAUNCHED.',
@@ -77,8 +85,8 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'Automation, remote-control, data capture, stabilizer modules – this new generation Stealth-Lock pipe connection technology is the product of innovation and ingenuity fueled by multimillion-dollar R&D investment.',
       'We listened to our end-users, technicians, operations engineers, and we settled on developing Mechanical Interference Fit technology for the 21st century. With fully automated prepping facilities, the NewGen Stealth-Lock system removes hazard and risk as it minimizes workforce "hands-on" processing. The data capture features, enable evaluation of each joint whether real-time or postproduction. In the field, the Stealth-Lock Assembly Machines are semi-automated, and this not only makes the work-zone safer, but it also ensures quality and integrity verification on each and every connection.',
     ],
-    image: '/images/stealth.png',
-    images: ['/images/sl1.jpg', '/images/sl2.jpg'],
+    image: '/images/sections/news/stealth.png',
+    images: ['/images/sections/news/sl1.jpg', '/images/sections/news/sl2.jpg'],
   },
   'agodco-tenaris-contract': {
     title: 'AGODCO & TENARIS INK STEALTH-LOCK LATIN AMERICA CONTRACT.',
@@ -89,8 +97,8 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'The agreement is to roll-out and develop Stealth-Lock mechanical interference fit products and services across Latin America through the broad stable of manufacturing outlets that TENARIS owns and operates in the region.',
       '"I believe the deal could be a blockbuster for both companies" said AGODCO Group CEO, Adam Harcourt. He continued: …if delivered as a full, vertically integrated product and service, client productivity increases whilst, costs decrease. With this, carbon steel is here to stay, giving greater value and confidence compared to immature emerging materials and systems for pipe connection".',
     ],
-    image: '/images/tenaris-new.png',
-    images: ['/images/tenaris-new.png', '/images/tenaris-new.png', '/images/tenaris-new.png'],
+    image: '/images/sections/news/tenaris-new.png',
+    images: ['/images/sections/news/tenaris-new.png'],
   },
 }
 
