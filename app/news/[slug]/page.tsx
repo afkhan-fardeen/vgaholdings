@@ -7,6 +7,27 @@ import Footer from '@/components/Footer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { getNewsArticle } from '@/data/news'
 
+function getYouTubeEmbedUrl(url: string) {
+  try {
+    const parsed = new URL(url)
+    const host = parsed.hostname.replace('www.', '')
+
+    if (host === 'youtu.be') {
+      const id = parsed.pathname.replace('/', '')
+      return id ? `https://www.youtube.com/embed/${id}` : url
+    }
+
+    if (host === 'youtube.com' || host === 'm.youtube.com') {
+      const id = parsed.searchParams.get('v')
+      return id ? `https://www.youtube.com/embed/${id}` : url
+    }
+  } catch {
+    return url
+  }
+
+  return url
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -40,6 +61,8 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
   if (!news) {
     notFound()
   }
+
+  const videoEmbedUrl = news.videoUrl ? getYouTubeEmbedUrl(news.videoUrl) : null
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
@@ -75,6 +98,18 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
               </div>
             ))}
           </div>
+
+          {videoEmbedUrl ? (
+            <div className="relative w-full aspect-video mb-6 sm:mb-8">
+              <iframe
+                src={videoEmbedUrl}
+                title={`${news.title} Video`}
+                className="absolute inset-0 w-full h-full rounded-md"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          ) : null}
 
           {/* News Content */}
           <div className="prose prose-sm sm:prose-base md:prose-lg max-w-none">

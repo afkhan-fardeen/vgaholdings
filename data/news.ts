@@ -5,7 +5,9 @@ export type NewsArticle = {
   /** Used for the listing card image */
   image: string
   /** Used on the detail page (3-up grid) */
-  images: [string, string, string]
+  images: string[]
+  /** Optional video to show on the detail page */
+  videoUrl?: string
 }
 
 export const newsBySlug: Record<string, NewsArticle> = {
@@ -21,7 +23,7 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'In April 2023 Greek Street got sold to the Bahrain Solymar Group, adding its Greek flavour to their portfolio.',
     ],
     image: '/images/greek-street-news.png',
-    images: ['/images/greek-street-news.png', '/images/greek-street-news.png', '/images/greek-street-news.png'],
+    images: ['/images/greek-street-news.png', '/images/greek1image.png', '/images/GreekImage2.png'],
   },
   'greek-street-tv': {
     title: 'GREEK STREET "MYKONOS" GOES LIVE ON BAHRAIN & GREEK TV CHANNELS.',
@@ -31,7 +33,8 @@ export const newsBySlug: Record<string, NewsArticle> = {
       "Watch Greek Street on Greece's No1 TV station \"ALPHA TV\" where questions and answers are made on how beautiful the Kingdom of Bahrain is and how friendly the Bahraini people are. In essence Greece is being promoted to our citizens of Bahrain which can travel and have a taste of \"Mykonos\", Greece without even leaving the country.",
     ],
     image: '/images/alpha-live.png',
-    images: ['/images/alpha-live.png', '/images/alpha-live.png', '/images/alpha-live.png'],
+    images: ['/images/alpha-live.png'],
+    videoUrl: 'https://www.youtube.com/watch?v=AgXjfCbAdhA',
   },
   'vga-chemicals-carbontech': {
     title: 'VGA CHEMICALS SIGNS AGREEMENT WITH CARBONTECH IN BAHRAIN.',
@@ -45,7 +48,7 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'If you have any inquiry regarding the Revowrap systems please feel free to get in touch with us.',
     ],
     image: '/images/carbontech.png',
-    images: ['/images/carbontech.png', '/images/carbontech.png', '/images/carbontech.png'],
+    images: ['/images/cbns1.jpg', '/images/cbn2.jpg', '/images/cbn3.jpg'],
   },
   'vga-consultants-arthur-little': {
     title: 'VGA CONSULTANTS SIGN AGREEMENT WITH ARTHUR D. LITTLE IN SAUDI ARABIA.',
@@ -75,7 +78,7 @@ export const newsBySlug: Record<string, NewsArticle> = {
       'We listened to our end-users, technicians, operations engineers, and we settled on developing Mechanical Interference Fit technology for the 21st century. With fully automated prepping facilities, the NewGen Stealth-Lock system removes hazard and risk as it minimizes workforce "hands-on" processing. The data capture features, enable evaluation of each joint whether real-time or postproduction. In the field, the Stealth-Lock Assembly Machines are semi-automated, and this not only makes the work-zone safer, but it also ensures quality and integrity verification on each and every connection.',
     ],
     image: '/images/stealth.png',
-    images: ['/images/stealth.png', '/images/stealth.png', '/images/stealth.png'],
+    images: ['/images/sl1.jpg', '/images/sl2.jpg'],
   },
   'agodco-tenaris-contract': {
     title: 'AGODCO & TENARIS INK STEALTH-LOCK LATIN AMERICA CONTRACT.',
@@ -103,4 +106,3 @@ export const newsItems = newsSlugs.map((slug) => ({
 export function getNewsArticle(slug: string) {
   return newsBySlug[slug]
 }
-

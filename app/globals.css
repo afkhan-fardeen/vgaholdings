@@ -61,16 +61,9 @@ body {
 .video-container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  height: 100vh;
+  min-height: 100svh;
+  height: 100svh;
   overflow: hidden;
-}
-
-@media (max-width: 640px) {
-  .video-container {
-    min-height: 80vh;
-    height: 80vh;
-  }
 }
 
 .video-container video {
@@ -160,11 +153,20 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 5rem;
+}
+
+@media (min-width: 640px) {
+  html {
+    scroll-padding-top: 6rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+    scroll-snap-type: none;
   }
   
   *,

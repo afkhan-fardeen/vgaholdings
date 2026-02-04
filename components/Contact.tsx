@@ -1,7 +1,10 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-16 sm:py-24 md:py-32 bg-white animate-fade-up">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+    <section
+      id="contact"
+      className="min-h-[100svh] snap-start [scroll-snap-stop:always] flex items-center py-16 sm:py-24 md:py-32 bg-white animate-fade-up"
+    >
+      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-8 sm:mb-12 animate-fade-up anim-delay-100">
           Say hello
         </h2>
