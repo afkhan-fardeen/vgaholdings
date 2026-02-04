@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="snap-start md:snap-center [scroll-snap-stop:always] flex items-center py-6 sm:py-8 md:py-10 bg-black text-white scroll-mt-16 sm:scroll-mt-20"
+      className="snap-start [scroll-snap-stop:always] flex items-center py-6 sm:py-8 md:py-10 bg-black text-white scroll-mt-16 sm:scroll-mt-20"
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-white mb-10 sm:mb-14 animate-fade-up anim-delay-100 parallax-text">
