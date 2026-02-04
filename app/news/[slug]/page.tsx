@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import Breadcrumbs from '@/components/Breadcrumbs'
 import { getNewsArticle } from '@/data/news'
 
@@ -82,7 +81,7 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
     <>
       <Header />
       <main>
-        <article className="min-h-[100svh] snap-start py-8 sm:py-12 md:py-16 lg:py-24">
+        <article className="min-h-[100svh] snap-center py-8 sm:py-12 md:py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <Breadcrumbs items={breadcrumbs} />
 
@@ -135,7 +134,14 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
             ))}
           </div>
 
-            <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[#D9D9D9]">
+            <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-[#D9D9D9] flex flex-wrap gap-4">
+              <Link
+                href="/"
+                className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-[#1F2A36] hover:text-[#d4af37] transition-colors"
+              >
+                <iconify-icon icon="solar:home-2-linear" stroke-width="1.5" width="16" height="16" className="sm:w-5 sm:h-5" />
+                Back to Home
+              </Link>
               <Link
                 href="/#news"
                 className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-[#1F2A36] hover:text-[#d4af37] transition-colors"
@@ -147,7 +153,6 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
           </div>
         </article>
       </main>
-      <Footer />
     </>
   )
 }

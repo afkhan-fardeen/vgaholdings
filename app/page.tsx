@@ -12,7 +12,6 @@ import Quote from '@/components/Quote'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import StealthVideo from '@/components/StealthVideo'
 import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
 import ParallaxController from '@/components/ParallaxController'
 
 export const metadata: Metadata = {
@@ -40,7 +39,6 @@ export default function Home() {
         <StealthVideo />
         <Contact />
       </main>
-      <Footer />
     </>
   )
 }

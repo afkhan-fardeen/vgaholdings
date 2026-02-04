@@ -8,19 +8,19 @@ const leaders = [
   {
     name: 'Terry Antoniadis',
     role: 'CEO',
-    image: '/images/sections/leadership/Terry-pic.jpg',
+    image: '/images/sections/leadership/terry.png',
     linkedin: 'https://www.linkedin.com/in/eleftherios-antoniadis-64675820',
   },
   {
     name: 'Yana Antoniadis',
     role: 'Managing Director',
-    image: '/images/sections/leadership/managingdirector.png',
+    image: '/images/sections/leadership/yana.png',
     linkedin: 'https://www.linkedin.com/in/yana-antoniadis-a66817148/',
   },
   {
     name: 'Brett Paul Maclagan',
     role: 'Compliance Director',
-    image: '/images/sections/leadership/compliancedirector.png',
+    image: '/images/sections/leadership/brett.png',
     linkedin: 'https://www.linkedin.com/in/brett-maclagan-b250975/',
   },
 ]
@@ -62,45 +62,46 @@ export default function Leadership() {
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Meet Our Leaders</h2>
         </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-6 sm:gap-x-8 gap-y-8 sm:gap-y-12">
-          {leaders.map((leader, index) => (
-            <div
-              key={index}
-              data-index={index}
-              className={`group text-center transition-all duration-700 ${
-                visibleItems[index]
-                  ? 'opacity-100 translate-y-0'
-                  : 'opacity-0 translate-y-8'
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              <div className="bg-[#D9D9D9] aspect-[3/4] w-full mb-3 sm:mb-4 overflow-hidden mx-auto max-w-[120px] sm:max-w-[150px] md:max-w-[180px] lg:max-w-[200px] transition-all duration-500 group-hover:shadow-lg group-hover:shadow-[#d4af37]/20">
-                <div className="relative w-full h-full">
-                  <Image
-                    src={leader.image}
-                    alt={`${leader.name} - ${leader.role}`}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 180px, 200px"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+        {leaders.map((leader, index) => (
+          <div
+            key={index}
+            data-index={index}
+            className={`bg-white p-3 sm:p-4 border border-[#D9D9D9] hover:border-[#d4af37]/30 hover:shadow-md transition-all duration-300 group ${
+              visibleItems[index]
+                ? 'opacity-100 translate-y-0'
+                : 'opacity-0 translate-y-8'
+            }`}
+            style={{ transitionDelay: `${index * 120}ms` }}
+          >
+            <div className="bg-[#D9D9D9] aspect-[4/5] w-full mb-3 overflow-hidden max-w-[220px] mx-auto">
+              <div className="relative w-full h-full">
+                <Image
+                  src={leader.image}
+                  alt={`${leader.name} - ${leader.role}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <h4 className="text-base sm:text-lg font-medium text-[#1F2A36] group-hover:text-[#d4af37] transition-colors duration-300">
-                {leader.name}
-              </h4>
-              <p className="text-xs sm:text-sm text-[#4A4F55] mb-2">{leader.role}</p>
-              <a
-                href={leader.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-[#d4af37] hover:text-[#1F2A36] hover:scale-110 transition-all duration-300"
-              >
-                <iconify-icon icon="mdi:linkedin" width="20" height="20" className="sm:w-6 sm:h-6" />
-              </a>
             </div>
-          ))}
+            <h4 className="text-sm sm:text-base font-medium text-[#1F2A36] group-hover:text-[#d4af37] transition-colors duration-300">
+              {leader.name}
+            </h4>
+            <p className="text-xs sm:text-sm text-[#4A4F55] mb-2">{leader.role}</p>
+            <a
+              href={leader.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-[#1F2A36] hover:text-[#d4af37] transition-colors"
+            >
+              <iconify-icon icon="mdi:linkedin" width="18" height="18" className="sm:w-5 sm:h-5" />
+              LinkedIn
+            </a>
+          </div>
+        ))}
       </div>
     </Section>
   )
