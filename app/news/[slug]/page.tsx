@@ -81,7 +81,7 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
     <>
       <Header />
       <main>
-        <article className="min-h-[100svh] snap-center py-8 sm:py-12 md:py-16 lg:py-24">
+        <article className="min-h-[100svh] snap-start md:snap-center py-8 sm:py-12 md:py-16 lg:py-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <Breadcrumbs items={breadcrumbs} />
 

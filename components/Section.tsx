@@ -19,7 +19,7 @@ const Section = forwardRef<HTMLElement, Props>(function Section(
     <section
       ref={ref}
       id={id}
-      className={`min-h-[100svh] snap-center [scroll-snap-stop:always] flex items-center py-12 sm:py-16 md:py-24 bg-white scroll-mt-16 sm:scroll-mt-20 ${className}`.trim()}
+      className={`min-h-[100svh] snap-start md:snap-center [scroll-snap-stop:always] flex items-center py-12 sm:py-16 md:py-24 bg-white scroll-mt-16 sm:scroll-mt-20 ${className}`.trim()}
     >
       <div className={`${containerBaseClass} ${containerClassName}`.trim()}>{children}</div>
     </section>
