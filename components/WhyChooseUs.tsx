@@ -5,25 +5,25 @@ const reasons = [
     icon: 'solar:clock-circle-linear',
     title: 'Project Timeline Recovery',
     description:
-      'We have delivered complex pipeline projects where conventional methods failed—achieving record timelines, including 25 km of 12-inch carbon steel, 47 expansion loops, and 12 major road crossings. Delivered in 16 days after mobilization.',
+      'We have performed countless project recovery missions whereby conventional welding has failed to deliver pipelines to agreed project deadlines. How about 25-km of 12-inch carbon steel with 47 expansion loops and 12 major road crossings? Timeline – 16 days after two days of mobilization.',
   },
   {
     icon: 'solar:rocket-linear',
     title: 'Oil Production Acceleration',
     description:
-      'By dramatically reducing pipeline construction timelines, our solutions enable operators to accelerate production, increase export readiness, and protect margins against fixed operating costs.',
+      'Many national economies and global Oil & Gas operators are dependent on accelerated production volumes in order to maintain margin over and above their fixed operating costs. Through its fast pipeline construction, Stealth-Lock is an important partner to increasing volume production ready for export.',
   },
   {
     icon: 'solar:lightning-linear',
     title: 'Faster Flow-Line Development',
     description:
-      'Projects that traditionally take years can be delivered in months—resulting in significant cost savings, earlier hydrocarbon production, and reduced operational risk.',
+      'If you consider that with welding, it might take a four-year contract to complete a gathering network comprising of over 300 hook ups. Then, consider Stealth-Lock that performed its scope in 14 months! Substantial operational cost savings, not to mention the hydrocarbon production brought forward.',
   },
   {
     icon: 'solar:users-group-rounded-linear',
     title: 'Project & Programme Management',
     description:
-      'Our experienced advisors manage complex, multi-stakeholder projects across regions, ensuring governance, delivery certainty, and operational excellence.',
+      'We are a group of multi-skilled and diverse business advisors experienced in global markets, specifically the Middle East. Our practitioners have worked in the United States, Europe, and across the Middle East in Finance/Banking, Oil, Gas & Energy, Transaction Advisory, Process Improvement and Project & Programme Management.',
   },
 ]
 

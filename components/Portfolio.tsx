@@ -44,11 +44,14 @@ export default function Portfolio() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
-          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mb-4 mx-auto">
-            VGA Holdings' investment portfolios are designed to enhance entertainment, education, and experiential engagement.
+          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-4xl mb-4 mx-auto leading-relaxed">
+            Welcome to VGA Holdings Investment Portfolios, where innovation meets opportunity!
           </p>
-          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-3xl mx-auto">
-            Our portfolio includes Playsy, VGA Events, The Agency (Orizon), Playbox, Metakid, and MoneyTree. Each venture is purpose-built to deliver measurable impact, scalability, and long-term value.
+          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mx-auto leading-relaxed">
+            Our diverse offerings are designed to enhance your entertainment, event planning, and educational experiences. At the forefront is Playsy, our dual reality innovative play center that seamlessly merges creativity and technology for unparalleled fun. We also feature VGA Events, your one-stop shop for event solutions, serving everything from corporate gatherings to VIP events. The Agency introduces Orizon, our groundbreaking 3-step system that transforms sales and marketing strategies for measurable success. Additionally, Playbox encourages kids to step away from screens and engage their craft skills and imagination through hands-on activities. Metakid offers interactive dual challenges, teaching kids how to use technology as a tool rather than mere entertainment. Finally, MoneyTree is our initiative focused on fostering financial literacy in children from an early age, ensuring they are well-prepared for the future.
+          </p>
+          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mx-auto mt-4 leading-relaxed">
+            Discover the potential of each portfolio by clicking on the logos below and embark on a journey of engagement and growth with VGA!
           </p>
         </div>
 
