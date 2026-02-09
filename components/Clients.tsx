@@ -7,23 +7,26 @@ import Section from '@/components/Section'
 type Category = 'All' | 'CHEMICALS' | 'CONSULTANCY' | 'OIL & GAS'
 
 const clients = [
-  { name: 'ADNOC', logo: '/images/sections/clients/ADNOC.png', category: 'OIL & GAS' as Category },
-  { name: 'Bapco', logo: '/images/sections/clients/Bapco.jpg', category: 'OIL & GAS' as Category },
-  { name: 'Bapco Refine', logo: '/images/sections/clients/bapco-refine.png', category: 'OIL & GAS' as Category },
-  { name: 'GALFAR', logo: '/images/sections/clients/GALFAR.png', category: 'OIL & GAS' as Category },
-  { name: 'PDO', logo: '/images/sections/clients/PDO.png', category: 'OIL & GAS' as Category },
-  { name: 'TENARIS', logo: '/images/sections/clients/TENARIS.png', category: 'OIL & GAS' as Category },
-  { name: 'RAFCO', logo: '/images/sections/clients/RAFCO.png', category: 'OIL & GAS' as Category },
-  { name: 'OXY', logo: '/images/sections/clients/OXY.png', category: 'OIL & GAS' as Category },
-  { name: 'AGODCO', logo: '/images/sections/clients/agodco.png', category: 'OIL & GAS' as Category },
-  { name: 'Arthur L', logo: '/images/sections/clients/arthurl.jpg', category: 'OIL & GAS' as Category },
-  { name: 'GS', logo: '/images/sections/clients/gs.png', category: 'OIL & GAS' as Category },
-  { name: 'Berger', logo: '/images/sections/clients/berger.png', category: 'CHEMICALS' as Category },
-  { name: 'EDB', logo: '/images/sections/clients/edb.png', category: 'CONSULTANCY' as Category },
-  { name: 'AMA', logo: '/images/sections/clients/ama.jpeg', category: 'CONSULTANCY' as Category },
-  { name: 'STSBH', logo: '/images/sections/clients/stsbh.png', category: 'CONSULTANCY' as Category },
+  // CONSULTANCY
+  { name: 'Berger', logo: '/images/sections/clients/berger.png', category: 'CONSULTANCY' as Category },
   { name: 'SY Enterprises', logo: '/images/sections/clients/syenterprises.png', category: 'CONSULTANCY' as Category },
+  { name: 'EDB', logo: '/images/sections/clients/edb.png', category: 'CONSULTANCY' as Category },
+  { name: 'Arthur L', logo: '/images/sections/clients/arthurl.jpg', category: 'CONSULTANCY' as Category },
+  { name: 'AGODCO', logo: '/images/sections/clients/agodco.png', category: 'CONSULTANCY' as Category },
   { name: 'Extaxi', logo: '/images/sections/clients/extaxi.png', category: 'CONSULTANCY' as Category },
+  { name: 'GS', logo: '/images/sections/clients/gs.png', category: 'CONSULTANCY' as Category },
+  // CHEMICALS
+  { name: 'Bapco', logo: '/images/sections/clients/Bapco.jpg', category: 'CHEMICALS' as Category },
+  { name: 'Bapco Refine', logo: '/images/sections/clients/bapco-refine.png', category: 'CHEMICALS' as Category },
+  { name: 'RAFCO', logo: '/images/sections/clients/RAFCO.png', category: 'CHEMICALS' as Category },
+  { name: 'STSBH', logo: '/images/sections/clients/stsbh.png', category: 'CHEMICALS' as Category },
+  { name: 'AMA', logo: '/images/sections/clients/ama.jpeg', category: 'CHEMICALS' as Category },
+  // OIL & GAS
+  { name: 'PDO', logo: '/images/sections/clients/PDO.png', category: 'OIL & GAS' as Category },
+  { name: 'OXY', logo: '/images/sections/clients/OXY.png', category: 'OIL & GAS' as Category },
+  { name: 'ADNOC', logo: '/images/sections/clients/ADNOC.png', category: 'OIL & GAS' as Category },
+  { name: 'GALFAR', logo: '/images/sections/clients/GALFAR.png', category: 'OIL & GAS' as Category },
+  { name: 'TENARIS', logo: '/images/sections/clients/TENARIS.png', category: 'OIL & GAS' as Category },
 ]
 
 const categories: Category[] = ['All', 'CHEMICALS', 'CONSULTANCY', 'OIL & GAS']
@@ -34,8 +37,13 @@ export default function Clients() {
   const [isHovered, setIsHovered] = useState(false)
   const autoScrollRef = useRef<number | null>(null)
 
-  // Show all clients in all tabs
-  const displayClients = [...clients, ...clients] // Duplicate for seamless loop
+  // Filter clients based on active category
+  const filteredClients = activeCategory === 'All' 
+    ? clients 
+    : clients.filter(client => client.category === activeCategory)
+
+  // Duplicate for seamless loop
+  const displayClients = [...filteredClients, ...filteredClients]
 
   // Auto-scroll functionality
   useEffect(() => {
@@ -62,7 +70,7 @@ export default function Clients() {
         clearInterval(autoScrollRef.current)
       }
     }
-  }, [activeCategory, isHovered])
+  }, [activeCategory, isHovered, filteredClients])
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollContainerRef.current) return
