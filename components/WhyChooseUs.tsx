@@ -42,10 +42,10 @@ export default function WhyChooseUs() {
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#d4af37]">
                 <iconify-icon icon={reason.icon} width="24" height="24" stroke-width="1.5" className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
               </div>
-              <h3 className="text-lg sm:text-xl md:text-2xl font-medium tracking-tight text-[#1F2A36] mb-2 sm:mb-3 leading-tight">
+              <h3 className="text-base sm:text-lg font-medium tracking-tight text-[#1F2A36] mb-2 sm:mb-3 leading-tight">
                 {reason.title}
               </h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#4A4F55] font-light leading-relaxed">
+              <p className="text-sm sm:text-base text-[#4A4F55] font-light leading-relaxed">
                 {reason.description}
               </p>
             </div>

@@ -44,7 +44,7 @@ export default function Portfolio() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
-          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-4xl mb-4 mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mb-4 mx-auto leading-relaxed">
             Welcome to VGA Holdings Investment Portfolios, where innovation meets opportunity!
           </p>
           <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mx-auto leading-relaxed">

@@ -13,10 +13,10 @@ export default function About() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 parallax-text text-center md:text-left">
               About Us
             </h2>
-            <p className="text-sm sm:text-base md:text-lg font-light text-[#4A4F55] leading-relaxed mb-3 sm:mb-4 md:mb-6">
+            <p className="text-sm sm:text-base font-light text-[#4A4F55] leading-relaxed mb-3 sm:mb-4 md:mb-6">
               VGA was established in 2014 in the Kingdom of Bahrain. We engage in a variety of sectors, such as Brokerage, Consultancy, Chemical Distribution, Oil and Gas Pipeline Services and various other investment portfolios.
             </p>
-            <p className="text-sm sm:text-base md:text-lg font-light text-[#4A4F55] leading-relaxed">
+            <p className="text-sm sm:text-base font-light text-[#4A4F55] leading-relaxed">
               Goal setting is a powerful process for thinking about your ideal future and for motivating yourself to turn your vision of this future into reality, and VGA has the skills and the knowledge to help you do so.
             </p>
             <p className="text-base sm:text-lg md:text-xl font-medium text-[#1F2A36] mt-3 sm:mt-4 md:mt-6 font-gloria">The VGA Team</p>

@@ -59,8 +59,8 @@ export default function WhatWeDo() {
                   loading="lazy"
                 />
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{capability.title}</h3>
-              <p className="text-xs sm:text-sm text-[#4A4F55] font-light leading-relaxed mb-3 sm:mb-4">
+              <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{capability.title}</h3>
+              <p className="text-sm sm:text-base text-[#4A4F55] font-light leading-relaxed mb-3 sm:mb-4">
                 {capability.description}
               </p>
               <div className="pt-3 sm:pt-4 border-t border-[#D9D9D9]">

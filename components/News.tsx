@@ -31,8 +31,8 @@ export default function News() {
                 />
               </div>
               <div className="p-3 sm:p-4 flex flex-col flex-1">
-                <h3 className="text-sm sm:text-base md:text-lg font-medium text-[#1F2A36] mb-2 leading-tight">{item.title}</h3>
-                <p className="text-xs sm:text-sm text-[#4A4F55] font-light line-clamp-2 mb-3 flex-1">{item.description}</p>
+                <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 leading-tight">{item.title}</h3>
+                <p className="text-sm sm:text-base text-[#4A4F55] font-light line-clamp-2 mb-3 flex-1">{item.description}</p>
                 <div className="mt-auto">
                   <Link
                     href={`/news/${item.id}`}

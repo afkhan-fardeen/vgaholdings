@@ -51,7 +51,7 @@ export default function Services() {
             Capabilities
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">Our Services</h2>
-          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-4xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mx-auto leading-relaxed">
             We carry your energy in safe, reliable and responsible ways. We are committed to the communities to which we serve on land and sea. We are part of those communities and as such, we fulfil our obligations to protect and vouch safe all people, all wildlife and our globally shared environment.
           </p>
         </div>
@@ -66,8 +66,8 @@ export default function Services() {
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#1F2A36] group-hover:text-[#d4af37] transition-colors">
                 <iconify-icon icon={service.icon} width="24" height="24" stroke-width="1.5" className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{service.title}</h3>
-              <p className="text-xs sm:text-sm md:text-base text-[#4A4F55] font-light leading-relaxed">
+              <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{service.title}</h3>
+              <p className="text-sm sm:text-base text-[#4A4F55] font-light leading-relaxed">
                 {service.description}
               </p>
             </div>
