@@ -144,6 +144,13 @@ body {
   animation-delay: 400ms;
 }
 
+/* Gloria font tilt */
+.font-gloria {
+  transform: rotate(-2.5deg);
+  display: inline-block;
+  transform-origin: center;
+}
+
 /* Focus styles for accessibility */
 *:focus-visible {
   outline: 2px solid #d4af37;
@@ -153,19 +160,15 @@ body {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 
-@media (max-width: 768px) {
-  html {
-    scroll-snap-type: y proximity;
-  }
+body {
+  overflow-x: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-    scroll-snap-type: none;
   }
   
   *,

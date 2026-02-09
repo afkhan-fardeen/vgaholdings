@@ -3,32 +3,40 @@ import Section from '@/components/Section'
 
 export default function StealthVideo() {
   return (
-    <Section id="stealth-video" className="py-0" fullWidth containerClassName="max-w-none w-full px-0 sm:px-0 mx-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-stretch">
-        <div className="relative w-full h-full min-h-[100svh] bg-[#E5E7EB] overflow-hidden">
-          <Image
-            src="/images/yt.png"
-            alt="YouTube"
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            loading="lazy"
-          />
-        </div>
-        <div className="px-4 sm:px-6 md:px-12 py-10 sm:py-12 md:py-16 flex flex-col justify-center">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-medium tracking-tight text-[#1F2A36] leading-tight mb-4 sm:mb-6 text-center md:text-left animate-fade-up anim-delay-100 parallax-text">
-            Stealth-Lock - The fastest mechanical pipeline in the world
-          </h2>
-          <div className="flex items-center justify-center">
-            <a
-              href="https://www.youtube.com/watch?v=jvobKDCtljA&t=1s"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 hover:scale-105 transition-transform"
-              aria-label="Watch Stealth-Lock video on YouTube"
-            >
-              <iconify-icon icon="mdi:youtube" width="80" height="80" className="sm:w-12 sm:h-12" style={{ color: '#FF0000' }} />
-            </a>
+    <Section id="stealth-video">
+      <div className="bg-white shadow-[0_10px_40px_rgba(15,23,42,0.08)] px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
+        <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16 items-start">
+          <div className="w-full md:w-1/2">
+            <div className="aspect-[4/3] bg-[#E5E7EB] w-full overflow-hidden relative mt-4 sm:mt-0">
+              <Image
+                src="/images/stealth1.png"
+                alt="Stealth-Lock"
+                fill
+                className="object-cover parallax"
+                data-parallax="0.06"
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 100vw, 50vw"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div className="w-full md:w-1/2">
+            <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
+              Technology
+            </span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 parallax-text text-center md:text-left">
+              Stealth-Lock - The fastest mechanical pipeline in the world
+            </h2>
+            <div className="flex items-center justify-center md:justify-start mt-6 sm:mt-8">
+              <a
+                href="https://www.youtube.com/watch?v=jvobKDCtljA&t=1s"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 hover:scale-105 transition-transform"
+                aria-label="Watch Stealth-Lock video on YouTube"
+              >
+                <iconify-icon icon="mdi:youtube" width="80" height="80" className="sm:w-12 sm:h-12" style={{ color: '#FF0000' }} />
+              </a>
+            </div>
           </div>
         </div>
       </div>

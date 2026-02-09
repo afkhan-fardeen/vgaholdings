@@ -8,12 +8,11 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { label: 'About Us', href: '#about' },
-    { label: 'What We Do', href: '#what-we-do' },
+    { label: 'Home', href: '#' },
+    { label: 'About', href: '#about' },
     { label: 'Services', href: '#services' },
-    { label: 'Portfolio', href: '#portfolio' },
     { label: 'News', href: '#news' },
-    { label: 'Clients', href: '#clients' },
+    { label: 'Our Clients', href: '#clients' },
     { label: 'Contact', href: '#contact' },
   ]
 
@@ -22,7 +21,7 @@ export default function Header() {
       className="sticky top-0 z-50 bg-black/95 backdrop-blur-md"
       role="banner"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2" aria-label="VGA Holdings Home">
           <Image 
@@ -30,7 +29,7 @@ export default function Header() {
             alt="VGA Holdings Logo" 
             width={400}
             height={400}
-            className="h-14 sm:h-16 md:h-20 w-auto"
+            className="h-12 sm:h-14 w-auto"
             priority
             sizes="(max-width: 640px) 56px, (max-width: 768px) 64px, 80px"
           />

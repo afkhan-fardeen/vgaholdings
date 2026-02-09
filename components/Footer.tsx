@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Footer() {
   return (
     <footer
-      className="min-h-[100svh] snap-start [scroll-snap-stop:always] bg-black text-white flex items-center pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12"
+      className="min-h-[100svh] bg-black text-white flex items-center pt-12 sm:pt-16 md:pt-24 pb-8 sm:pb-12"
       role="contentinfo"
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6">

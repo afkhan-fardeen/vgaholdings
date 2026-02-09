@@ -15,15 +15,20 @@ const Section = forwardRef<HTMLElement, Props>(function Section(
 ) {
   const containerBaseClass = fullWidth ? 'w-full px-0' : 'w-full max-w-7xl mx-auto px-4 sm:px-6'
 
+  const hasBgColor = className.includes('bg-')
+  const baseClasses = `min-h-[100svh] flex items-center py-12 sm:py-16 md:py-24 scroll-mt-16 ${hasBgColor ? '' : 'bg-white'} ${className}`.trim()
+
   return (
     <section
       ref={ref}
       id={id}
-      className={`min-h-[100svh] snap-start [scroll-snap-stop:always] flex items-center py-12 sm:py-16 md:py-24 bg-white scroll-mt-16 sm:scroll-mt-20 ${className}`.trim()}
+      className={baseClasses}
     >
-      <div className={`${containerBaseClass} ${containerClassName}`.trim()}>{children}</div>
+      <div className={`${containerBaseClass} ${containerClassName}`.trim()} style={{ minHeight: containerClassName.includes('h-full') ? '100%' : undefined }}>{children}</div>
     </section>
   )
 })
+
+Section.displayName = 'Section'
 
 export default Section

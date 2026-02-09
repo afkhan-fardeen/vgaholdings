@@ -1,7 +1,15 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Script from 'next/script'
+import { Gloria_Hallelujah } from 'next/font/google'
 import { SITE_NAME, SITE_URL } from '@/config/site'
+
+const gloriaHallelujah = Gloria_Hallelujah({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-gloria',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -112,7 +120,7 @@ export default function RootLayout({
   }
 
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className={`scroll-smooth ${gloriaHallelujah.variable}`}>
       <head>
         <script
           type="application/ld+json"

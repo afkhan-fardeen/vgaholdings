@@ -1,10 +1,13 @@
+import Section from '@/components/Section'
+
 export default function Contact() {
   return (
-    <section
+    <Section
       id="contact"
-      className="snap-start [scroll-snap-stop:always] flex items-center py-6 sm:py-8 md:py-10 bg-black text-white scroll-mt-16 sm:scroll-mt-20"
+      className="bg-black text-white"
+      containerClassName="text-center flex flex-col justify-between min-h-full"
     >
-      <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <div className="flex-1 flex flex-col justify-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-white mb-10 sm:mb-14 animate-fade-up anim-delay-100 parallax-text">
           Say hello
         </h2>
@@ -42,10 +45,10 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div className="mt-12 sm:mt-16 text-xs sm:text-sm text-white/50">
-          © 2026 VGA Holdings. All Rights Reserved.
-        </div>
       </div>
-    </section>
+      <div className="pt-12 sm:pt-16 text-xs sm:text-sm text-white/50">
+        © 2026 VGA Holdings. All Rights Reserved.
+      </div>
+    </Section>
   )
 }

@@ -30,7 +30,7 @@ const reasons = [
 export default function WhyChooseUs() {
   return (
     <Section id="why-choose-us">
-        <div className="mb-8 sm:mb-12 md:mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Value Proposition
           </span>

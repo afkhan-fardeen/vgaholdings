@@ -46,12 +46,12 @@ const services = [
 export default function Services() {
   return (
     <Section id="services">
-        <div className="mb-8 sm:mb-12 md:mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Capabilities
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">Our Services</h2>
-          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl">
+          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mx-auto">
             We operate with responsibility—to our clients, communities, and the environment.
           </p>
         </div>

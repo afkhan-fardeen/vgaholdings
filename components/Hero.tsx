@@ -15,7 +15,7 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative video-container snap-start [scroll-snap-stop:always]" aria-label="Hero section with corporate video">
+    <section className="relative video-container" aria-label="Hero section with corporate video">
       <video
         ref={videoRef}
         autoPlay

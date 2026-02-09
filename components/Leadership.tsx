@@ -8,7 +8,7 @@ const leaders = [
   {
     name: 'Terry Antoniadis',
     role: 'CEO',
-    image: '/images/sections/leadership/terry-1.jpg',
+    image: '/images/sections/leadership/terry-1.png',
     linkedin: 'https://www.linkedin.com/in/eleftherios-antoniadis-64675820',
   },
   {
@@ -56,46 +56,46 @@ export default function Leadership() {
 
   return (
     <Section ref={sectionRef} id="leaders">
-      <div className="mb-8 sm:mb-12 md:mb-16">
+      <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Leadership
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Meet Our Leaders</h2>
         </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">
         {leaders.map((leader, index) => (
           <div
             key={index}
             data-index={index}
-            className={`bg-white p-3 sm:p-4 border border-[#D9D9D9] hover:border-[#d4af37]/30 hover:shadow-md transition-all duration-300 group ${
+            className={`text-center transition-all duration-300 group ${
               visibleItems[index]
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: `${index * 120}ms` }}
           >
-            <div className="bg-[#D9D9D9] aspect-[4/5] w-full mb-3 overflow-hidden max-w-[220px] mx-auto">
-              <div className="relative w-full h-full">
+            <div className="bg-[#D9D9D9] aspect-square w-full mb-4 overflow-hidden max-w-[220px] mx-auto rounded-full">
+              <div className="relative w-full h-full rounded-full">
                 <Image
                   src={leader.image}
                   alt={`${leader.name} - ${leader.role}`}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-cover rounded-full group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full" />
               </div>
             </div>
-            <h4 className="text-sm sm:text-base font-medium text-[#1F2A36] group-hover:text-[#d4af37] transition-colors duration-300">
+            <h4 className="text-base sm:text-lg md:text-xl font-medium text-[#1F2A36] group-hover:text-[#d4af37] transition-colors duration-300 font-gloria mb-2">
               {leader.name}
             </h4>
-            <p className="text-xs sm:text-sm text-[#4A4F55] mb-2">{leader.role}</p>
+            <p className="text-xs sm:text-sm text-[#4A4F55] mb-3">{leader.role}</p>
             <a
               href={leader.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-[#1F2A36] hover:text-[#d4af37] transition-colors"
+              className="inline-flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-[#1F2A36] hover:text-[#d4af37] transition-colors"
             >
               <iconify-icon icon="mdi:linkedin" width="18" height="18" className="sm:w-5 sm:h-5" />
               LinkedIn

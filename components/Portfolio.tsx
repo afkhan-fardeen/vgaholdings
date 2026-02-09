@@ -37,22 +37,22 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <Section id="portfolio">
-        <div className="mb-8 sm:mb-12 md:mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
-          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mb-4">
+          <p className="text-base sm:text-lg font-light text-[#4A4F55] max-w-3xl mb-4 mx-auto">
             VGA Holdings' investment portfolios are designed to enhance entertainment, education, and experiential engagement.
           </p>
-          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-3xl">
+          <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-3xl mx-auto">
             Our portfolio includes Playsy, VGA Events, The Agency (Orizon), Playbox, Metakid, and MoneyTree. Each venture is purpose-built to deliver measurable impact, scalability, and long-term value.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-center justify-center max-w-6xl mx-auto">
           {portfolioItems.map((item, index) => {
             const content = (
               <div
@@ -87,7 +87,7 @@ export default function Portfolio() {
           })}
         </div>
 
-        <div className="mt-12 max-w-2xl">
+        <div className="mt-12 max-w-2xl mx-auto">
           <div className="flex justify-between items-center mb-2">
             <span className="text-xs font-semibold text-[#4A4F55] uppercase tracking-wider">
               Investment Portfolio

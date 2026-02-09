@@ -35,18 +35,18 @@ const capabilities = [
 export default function WhatWeDo() {
   return (
     <Section id="what-we-do">
-        <div className="mb-8 sm:mb-12 md:mb-16">
+        <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Capabilities
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">What We Do</h2>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {capabilities.map((capability, index) => (
             <div
               key={index}
-              className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group border border-[#D9D9D9] hover:border-[#d4af37]/30 hover:shadow-md animate-scale-in"
+              className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_10px_40px_rgba(15,23,42,0.12)] animate-scale-in"
               style={{ animationDelay: `${index * 80 + 120}ms` }}
             >
               <div className="w-full h-28 sm:h-36 md:h-32 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax" data-parallax="0.03">

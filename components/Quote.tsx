@@ -7,8 +7,8 @@ export default function Quote() {
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] items-stretch">
         <div className="relative w-full h-full min-h-[100svh] bg-[#E5E7EB] overflow-hidden">
           <Image
-            src="/images/sections/quote/palmbeach.avif"
-            alt="Palm Beach"
+            src="/images/infinite.png"
+            alt="Infinite"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -24,7 +24,7 @@ export default function Quote() {
           </p>
           <div className="flex items-center justify-center gap-3">
             <span className="h-px w-10 bg-[#d4af37]/60" aria-hidden="true" />
-            <p className="text-sm sm:text-base md:text-lg font-medium text-[#d4af37]">Terry Antoniadis</p>
+            <p className="text-base sm:text-lg md:text-xl font-medium text-[#d4af37] font-gloria">Terry Antoniadis</p>
           </div>
         </div>
       </div>

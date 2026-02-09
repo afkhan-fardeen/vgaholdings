@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        gloria: ['var(--font-gloria)', 'cursive'],
       },
     },
   },
