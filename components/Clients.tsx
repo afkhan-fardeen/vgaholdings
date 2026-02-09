@@ -36,6 +36,7 @@ export default function Clients() {
   const scrollContainerRef = useRef<HTMLDivElement>(null)
   const [isHovered, setIsHovered] = useState(false)
   const autoScrollRef = useRef<number | null>(null)
+  const isScrollingRef = useRef(false)
 
   // Filter clients based on active category
   const filteredClients = activeCategory === 'All' 
@@ -45,40 +46,62 @@ export default function Clients() {
   // Duplicate for seamless loop
   const displayClients = [...filteredClients, ...filteredClients]
 
+  // Reset scroll position when category changes
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollLeft = 0
+    }
+  }, [activeCategory])
+
   // Auto-scroll functionality
   useEffect(() => {
-    if (!scrollContainerRef.current || isHovered) return
+    if (!scrollContainerRef.current) return
 
-    const scroll = () => {
-      if (!scrollContainerRef.current || isHovered) return
+    const container = scrollContainerRef.current
+    
+    const autoScroll = () => {
+      if (!scrollContainerRef.current || isHovered || isScrollingRef.current) {
+        autoScrollRef.current = requestAnimationFrame(autoScroll)
+        return
+      }
       
-      const container = scrollContainerRef.current
-      const scrollAmount = 1
-      
+      const scrollAmount = 0.5
       container.scrollLeft += scrollAmount
       
-      // Reset to beginning when reaching the end (seamless loop)
-      if (container.scrollLeft >= container.scrollWidth / 2) {
-        container.scrollLeft = 0
+      // Seamless loop: when we've scrolled past the first set, reset to beginning without animation
+      const singleSetWidth = container.scrollWidth / 2
+      if (container.scrollLeft >= singleSetWidth) {
+        // Reset instantly without visible jump
+        container.scrollLeft = container.scrollLeft - singleSetWidth
       }
+      
+      autoScrollRef.current = requestAnimationFrame(autoScroll)
     }
 
-    autoScrollRef.current = window.setInterval(scroll, 30) // Smooth continuous scroll
+    // Small delay to ensure DOM is ready
+    const timeoutId = setTimeout(() => {
+      autoScrollRef.current = requestAnimationFrame(autoScroll)
+    }, 100)
 
     return () => {
+      clearTimeout(timeoutId)
       if (autoScrollRef.current) {
-        clearInterval(autoScrollRef.current)
+        cancelAnimationFrame(autoScrollRef.current)
       }
     }
-  }, [activeCategory, isHovered, filteredClients])
+  }, [activeCategory, isHovered])
 
   const scroll = (direction: 'left' | 'right') => {
     if (!scrollContainerRef.current) return
+    isScrollingRef.current = true
     const scrollAmount = 300
     scrollContainerRef.current.scrollBy({
       left: direction === 'left' ? -scrollAmount : scrollAmount,
       behavior: 'smooth',
     })
+    setTimeout(() => {
+      isScrollingRef.current = false
+    }, 500)
   }
 
   return (
@@ -133,10 +156,13 @@ export default function Clients() {
           ref={scrollContainerRef}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center overflow-x-auto scrollbar-hide pb-4 scroll-smooth"
+          onTouchStart={() => setIsHovered(true)}
+          onTouchEnd={() => setIsHovered(false)}
+          className="flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center overflow-x-auto scrollbar-hide pb-4"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
+            scrollBehavior: 'auto',
           }}
         >
           {displayClients.map((client, index) => (
