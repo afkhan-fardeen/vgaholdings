@@ -124,7 +124,7 @@ export default function Clients() {
             className={`px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium tracking-wider uppercase transition-all duration-300 rounded-md ${
               activeCategory === category
                 ? 'bg-[#d4af37] text-white shadow-lg'
-                : 'bg-white text-[#4A4F55] hover:bg-[#F5F6F7] shadow-[0_2px_8px_rgba(15,23,42,0.08)]'
+                : 'bg-white text-[#4A4F55] hover:bg-[#F5F6F7] shadow-[0_0_20px_rgba(15,23,42,0.10)]'
             }`}
           >
             {category}
@@ -149,12 +149,8 @@ export default function Clients() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex-1 flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto scrollbar-hide pb-4"
-          style={{
-            scrollbarWidth: 'none',
-            msOverflowStyle: 'none',
-            scrollBehavior: 'auto',
-          }}
+          className="flex-1 flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto overflow-y-hidden scrollbar-hide pb-4"
+          style={{ WebkitOverflowScrolling: 'touch' }}
         >
           {displayClients.map((client, index) => (
             <div
@@ -181,13 +177,6 @@ export default function Clients() {
         >
           <iconify-icon icon="solar:alt-arrow-right-linear" width="12" height="12" stroke-width="1.5" />
         </button>
-
-        {/* Hide scrollbar styles */}
-        <style jsx global>{`
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-        `}</style>
       </div>
     </Section>
   )

@@ -67,6 +67,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/images/favicons/favicon.ico',
     shortcut: '/images/favicons/favicon.ico',
+    apple: '/images/favicons/favicon.ico',
   },
   robots: {
     index: true,
@@ -128,7 +129,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-[#F5F6F7] text-[#4A4F55]">
-        <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" strategy="afterInteractive" />
+        <Script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" strategy="beforeInteractive" />
         {children}
       </body>
     </html>

@@ -166,6 +166,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Hide scrollbar for client slider - Safari compatible */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -46,7 +46,7 @@ export default function WhatWeDo() {
           {capabilities.map((capability, index) => (
             <div
               key={index}
-              className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group shadow-[0_10px_15px_rgba(15,23,42,0.25)] hover:shadow-[0_10px_15px_rgba(15,23,42,0.3)] rounded-md animate-scale-in"
+              className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.12)] rounded-md animate-scale-in"
               style={{ animationDelay: `${index * 80 + 120}ms` }}
             >
               <div className="w-full h-32 sm:h-40 md:h-44 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax rounded-t-md" data-parallax="0.03">
