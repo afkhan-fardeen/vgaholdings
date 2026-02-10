@@ -60,7 +60,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-5 sm:p-6 md:p-8 lg:p-10 hover:bg-white transition-all duration-300 group shadow-[0_10px_15px_rgba(15,23,42,0.25)] hover:shadow-[0_10px_15px_rgba(15,23,42,0.3)] animate-scale-in"
+              className="bg-white p-5 sm:p-6 md:p-8 lg:p-10 hover:bg-white transition-all duration-300 group shadow-[0_10px_15px_rgba(15,23,42,0.25)] hover:shadow-[0_10px_15px_rgba(15,23,42,0.3)] rounded-md animate-scale-in"
               style={{ animationDelay: `${index * 80 + 100}ms` }}
             >
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#1F2A36] group-hover:text-[#d4af37] transition-colors">

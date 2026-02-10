@@ -37,7 +37,7 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <Section id="portfolio">
-      <div className="bg-white shadow-[0_10px_15px_rgba(15,23,42,0.25)] px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
+      <div className="bg-white shadow-[0_10px_15px_rgba(15,23,42,0.25)] rounded-md px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
         <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
