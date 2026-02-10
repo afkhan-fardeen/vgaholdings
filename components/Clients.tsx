@@ -121,7 +121,7 @@ export default function Clients() {
                 scrollContainerRef.current.scrollLeft = 0
               }
             }}
-            className={`px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium tracking-wider uppercase transition-all duration-300 rounded-md ${
+            className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs font-medium tracking-wider uppercase transition-all duration-300 rounded-full ${
               activeCategory === category
                 ? 'bg-[#d4af37] text-white shadow-lg'
                 : 'bg-white text-[#4A4F55] hover:bg-[#F5F6F7] shadow-[0_0_20px_rgba(15,23,42,0.10)]'
@@ -133,7 +133,7 @@ export default function Clients() {
       </div>
 
       {/* Slider Container - Full Width */}
-      <div className="relative w-full mx-auto flex items-center gap-2 sm:gap-4">
+      <div className="relative w-full mx-auto flex items-center gap-4 sm:gap-6 md:gap-8 lg:gap-10">
         {/* Left Arrow - Golden/Yellow - Outside */}
         <button
           onClick={() => scroll('left')}
@@ -155,7 +155,7 @@ export default function Clients() {
           {displayClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="relative h-20 w-40 sm:h-24 sm:w-48 md:h-28 md:w-56 lg:h-32 lg:w-64 xl:h-36 xl:w-72 flex-shrink-0"
+              className="relative h-20 w-40 sm:h-24 sm:w-48 md:h-28 md:w-56 lg:h-32 lg:w-64 xl:h-36 xl:w-72 flex-shrink-0 flex items-center justify-center bg-white rounded-md p-3 sm:p-4 shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.15)] transition-shadow"
             >
               <Image
                 src={client.logo}
