@@ -132,24 +132,24 @@ export default function Clients() {
         ))}
       </div>
 
-      {/* Slider Container */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
-        {/* Left Arrow - Golden/Yellow */}
+      {/* Slider Container - Full Width */}
+      <div className="relative w-full mx-auto px-0">
+        {/* Left Arrow - Golden/Yellow - Smaller */}
         <button
           onClick={() => scroll('left')}
-          className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-2 sm:p-3 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
+          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-1 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
           aria-label="Scroll left"
         >
-          <iconify-icon icon="solar:alt-arrow-left-linear" width="24" height="24" stroke-width="1.5" />
+          <iconify-icon icon="solar:alt-arrow-left-linear" width="12" height="12" stroke-width="1.5" />
         </button>
 
-        {/* Right Arrow - Golden/Yellow */}
+        {/* Right Arrow - Golden/Yellow - Smaller */}
         <button
           onClick={() => scroll('right')}
-          className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-2 sm:p-3 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
+          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-1 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
           aria-label="Scroll right"
         >
-          <iconify-icon icon="solar:alt-arrow-right-linear" width="24" height="24" stroke-width="1.5" />
+          <iconify-icon icon="solar:alt-arrow-right-linear" width="12" height="12" stroke-width="1.5" />
         </button>
 
         <div 
@@ -158,7 +158,7 @@ export default function Clients() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center overflow-x-auto scrollbar-hide pb-4"
+          className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto scrollbar-hide pb-4 w-full"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -168,14 +168,14 @@ export default function Clients() {
           {displayClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="relative h-16 w-32 sm:h-20 sm:w-40 md:h-24 md:w-48 lg:h-28 lg:w-56 flex-shrink-0"
+              className="relative h-20 w-40 sm:h-24 sm:w-48 md:h-28 md:w-56 lg:h-32 lg:w-64 xl:h-36 xl:w-72 flex-shrink-0"
             >
               <Image
                 src={client.logo}
                 alt={`${client.name} logo`}
                 fill
                 className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, (max-width: 1024px) 192px, 224px"
+                sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, (max-width: 1280px) 256px, 288px"
                 loading="lazy"
               />
             </div>

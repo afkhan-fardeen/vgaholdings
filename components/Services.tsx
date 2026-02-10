@@ -2,42 +2,42 @@ import Section from '@/components/Section'
 
 const services = [
   {
-    icon: 'solar:chart-2-linear',
+    icon: 'ion:ios-pie-outline',
     title: 'Analytics',
     description: 'Involves sifting through massive data sets to discover, interpret, and share new insights and knowledge.',
   },
   {
-    icon: 'solar:palette-linear',
+    icon: 'ion:ios-basketball-outline',
     title: 'Design',
     description: 'The process of envisioning and planning the creation of interactive and safe systems.',
   },
   {
-    icon: 'solar:presentation-graph-linear',
+    icon: 'ion:ios-monitor-outline',
     title: 'Consulting',
     description: 'Offering advice and our expertise to client organisations to help them improve their business performance.',
   },
   {
-    icon: 'solar:dollar-linear',
+    icon: 'mdi:currency-usd',
     title: 'Fair Profits',
     description: 'We grow businesses to profit in fair and sustainable ways.',
   },
   {
-    icon: 'solar:check-circle-linear',
+    icon: 'ion:ios-checkmark-empty',
     title: 'Best Practice',
     description: 'Is within our DNA in every thing we say and make.',
   },
   {
-    icon: 'solar:settings-linear',
+    icon: 'ion:android-alarm-clock',
     title: 'Implementation',
     description: 'Having the right integrated services resources in putting a decision or plan into effect.',
   },
   {
-    icon: 'solar:hand-shake-linear',
+    icon: 'ion:ios-people',
     title: 'Enabling Partners',
     description: 'We join hands for JVs, licensing, acquisitions and more.',
   },
   {
-    icon: 'solar:chart-square-linear',
+    icon: 'ion:cash',
     title: 'Adding Value',
     description: 'To stakeholders, communities and the families that rely on us.',
   },
@@ -64,7 +64,7 @@ export default function Services() {
               style={{ animationDelay: `${index * 80 + 100}ms` }}
             >
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#1F2A36] group-hover:text-[#d4af37] transition-colors">
-                <iconify-icon icon={service.icon} width="24" height="24" stroke-width="1.5" className="sm:w-7 sm:h-7 md:w-8 md:h-8" />
+                <iconify-icon icon={service.icon} width="48" height="48" stroke-width="1.5" className="sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
               </div>
               <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{service.title}</h3>
               <p className="text-sm sm:text-base text-[#4A4F55] font-light leading-relaxed">
