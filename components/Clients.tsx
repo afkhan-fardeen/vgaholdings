@@ -149,20 +149,20 @@ export default function Clients() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex-1 flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto overflow-y-hidden scrollbar-hide pb-4"
+          className="flex-1 flex gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-14 items-center overflow-x-auto scrollbar-hide py-8 px-2 min-h-[8rem] sm:min-h-[9rem] md:min-h-[10rem]"
           style={{ WebkitOverflowScrolling: 'touch' }}
         >
           {displayClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="relative h-20 w-40 sm:h-24 sm:w-48 md:h-28 md:w-56 lg:h-32 lg:w-64 xl:h-36 xl:w-72 flex-shrink-0 flex items-center justify-center bg-white rounded-md p-3 sm:p-4 shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.15)] transition-shadow"
+              className="relative h-28 w-48 sm:h-32 sm:w-56 md:h-36 md:w-64 lg:h-40 lg:w-80 xl:h-44 xl:w-96 flex-shrink-0 flex items-center justify-center bg-white rounded-md p-6 sm:p-8 shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.15)] transition-shadow"
             >
               <Image
                 src={client.logo}
                 alt={`${client.name} logo`}
                 fill
-                className="object-contain opacity-70 hover:opacity-100 transition-opacity"
-                sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, (max-width: 1280px) 256px, 288px"
+                className="object-contain object-center opacity-70 hover:opacity-100 transition-opacity"
+                sizes="(max-width: 640px) 176px, (max-width: 768px) 208px, (max-width: 1024px) 240px, (max-width: 1280px) 288px, 320px"
                 loading="lazy"
               />
             </div>
