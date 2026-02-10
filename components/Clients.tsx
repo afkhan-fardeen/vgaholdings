@@ -121,7 +121,7 @@ export default function Clients() {
                 scrollContainerRef.current.scrollLeft = 0
               }
             }}
-            className={`px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium tracking-wider uppercase transition-all duration-300 ${
+            className={`px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium tracking-wider uppercase transition-all duration-300 rounded-md ${
               activeCategory === category
                 ? 'bg-[#d4af37] text-white shadow-lg'
                 : 'bg-white text-[#4A4F55] hover:bg-[#F5F6F7] shadow-[0_2px_8px_rgba(15,23,42,0.08)]'
@@ -133,23 +133,14 @@ export default function Clients() {
       </div>
 
       {/* Slider Container - Full Width */}
-      <div className="relative w-full mx-auto px-0">
-        {/* Left Arrow - Golden/Yellow - Smaller */}
+      <div className="relative w-full mx-auto flex items-center gap-2 sm:gap-4">
+        {/* Left Arrow - Golden/Yellow - Outside */}
         <button
           onClick={() => scroll('left')}
-          className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-1 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
+          className="flex-shrink-0 bg-[#d4af37] text-white shadow-lg p-2 sm:p-3 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center z-10"
           aria-label="Scroll left"
         >
           <iconify-icon icon="solar:alt-arrow-left-linear" width="12" height="12" stroke-width="1.5" />
-        </button>
-
-        {/* Right Arrow - Golden/Yellow - Smaller */}
-        <button
-          onClick={() => scroll('right')}
-          className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 z-10 bg-[#d4af37] text-white shadow-lg p-1 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center"
-          aria-label="Scroll right"
-        >
-          <iconify-icon icon="solar:alt-arrow-right-linear" width="12" height="12" stroke-width="1.5" />
         </button>
 
         <div 
@@ -158,7 +149,7 @@ export default function Clients() {
           onMouseLeave={() => setIsHovered(false)}
           onTouchStart={() => setIsHovered(true)}
           onTouchEnd={() => setIsHovered(false)}
-          className="flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto scrollbar-hide pb-4 w-full"
+          className="flex-1 flex gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 items-center overflow-x-auto scrollbar-hide pb-4"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -181,6 +172,15 @@ export default function Clients() {
             </div>
           ))}
         </div>
+
+        {/* Right Arrow - Golden/Yellow - Outside */}
+        <button
+          onClick={() => scroll('right')}
+          className="flex-shrink-0 bg-[#d4af37] text-white shadow-lg p-2 sm:p-3 rounded-full hover:bg-[#c19d2e] transition-all duration-300 hidden md:flex items-center justify-center z-10"
+          aria-label="Scroll right"
+        >
+          <iconify-icon icon="solar:alt-arrow-right-linear" width="12" height="12" stroke-width="1.5" />
+        </button>
 
         {/* Hide scrollbar styles */}
         <style jsx global>{`
