@@ -4,7 +4,7 @@ import Section from '@/components/Section'
 export default function StealthVideo() {
   return (
     <Section id="stealth-video">
-      <div className="bg-white shadow-[0_10px_40px_rgba(15,23,42,0.08)] px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
+      <div className="bg-white shadow-[0_10px_15px_rgba(15,23,42,0.25)] px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
         <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16 items-start">
           <div className="w-full md:w-1/2">
             <div className="aspect-[4/3] bg-[#E5E7EB] w-full overflow-hidden relative mt-4 sm:mt-0">

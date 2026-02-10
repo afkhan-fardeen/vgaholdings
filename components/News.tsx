@@ -17,7 +17,7 @@ export default function News() {
           {newsItems.map((item, index) => (
             <article
               key={index}
-              className="bg-white shadow-[0_10px_40px_rgba(15,23,42,0.08)] hover:shadow-[0_10px_40px_rgba(15,23,42,0.12)] transition-all duration-300 flex flex-col animate-scale-in"
+              className="bg-white shadow-[0_10px_15px_rgba(15,23,42,0.25)] hover:shadow-[0_10px_15px_rgba(15,23,42,0.3)] transition-all duration-300 flex flex-col animate-scale-in"
               style={{ animationDelay: `${index * 90 + 120}ms` }}
             >
               <div className="relative w-full h-32 sm:h-36 md:h-40 flex-shrink-0 parallax" data-parallax="0.03">

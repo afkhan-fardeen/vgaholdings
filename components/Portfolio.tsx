@@ -37,6 +37,7 @@ const portfolioItems = [
 export default function Portfolio() {
   return (
     <Section id="portfolio">
+      <div className="bg-white shadow-[0_10px_15px_rgba(15,23,42,0.25)] px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
         <div className="mb-8 sm:mb-12 md:mb-16 text-center">
           <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
@@ -59,7 +60,7 @@ export default function Portfolio() {
           {portfolioItems.map((item, index) => {
             const content = (
               <div
-                className="h-16 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center border border-[#D9D9D9] bg-white hover:border-[#d4af37] hover:shadow-lg transition-all duration-300 p-2 sm:p-3 md:p-4 group animate-scale-in"
+                className="h-16 sm:h-20 md:h-24 lg:h-28 flex items-center justify-center hover:opacity-80 transition-all duration-300 p-2 sm:p-3 md:p-4 group animate-scale-in"
                 style={{ animationDelay: `${index * 70 + 120}ms` }}
               >
                 <div className="relative w-full h-full">
@@ -101,6 +102,7 @@ export default function Portfolio() {
             <div className="bg-[#d4af37] h-full rounded-full" style={{ width: '20%' }} />
           </div>
         </div>
+      </div>
     </Section>
   )
 }
