@@ -53,11 +53,11 @@ export default function WhatWeDo() {
               href={capability.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white hover:bg-white transition-all duration-300 group shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.12)] rounded-md animate-scale-in overflow-hidden"
+              className="block bg-white hover:bg-white transition-all duration-300 group shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.12)] rounded-md animate-scale-in overflow-hidden pt-3 px-3 sm:pt-4 sm:px-4"
               style={{ animationDelay: `${index * 80 + 120}ms` }}
               aria-label={`View ${capability.title}`}
             >
-              <div className="w-full aspect-[16/9] sm:aspect-[2/1] relative overflow-hidden rounded-t-md">
+              <div className="w-full aspect-[16/9] sm:aspect-[2/1] relative overflow-hidden rounded-md mb-3 sm:mb-4">
                 <Image
                   src={capability.image}
                   alt={`${capability.title} - ${capability.category}`}
