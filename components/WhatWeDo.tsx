@@ -8,6 +8,7 @@ const capabilities = [
     image: '/images/sections/what-we-do/SL-Pipeline-Construction.jpeg',
     category: 'Agodco Group',
     percentage: 50,
+    url: 'https://www.agodco.com/',
   },
   {
     title: 'Chemical Distribution',
@@ -15,6 +16,7 @@ const capabilities = [
     image: '/images/sections/what-we-do/carbontechimg.jpg',
     category: 'Carbontech',
     percentage: 20,
+    url: 'https://www.revowrap.com/',
   },
   {
     title: 'Consultancy Services',
@@ -22,6 +24,7 @@ const capabilities = [
     image: '/images/sections/what-we-do/Consultancy-service.jpg',
     category: 'Consultancy',
     percentage: 5,
+    url: 'https://vgaholdings.com/wp-content/uploads/2024/09/VGA-CONSULTANCY-SERVICES.pdf',
   },
   {
     title: 'Brokerage Services',
@@ -29,6 +32,7 @@ const capabilities = [
     image: '/images/sections/what-we-do/Brokerage.jpg',
     category: 'Brokerage',
     percentage: 5,
+    url: 'https://vgaholdings.com/wp-content/uploads/2024/09/VGA-BROKERAGE-SERVICES.pdf',
   },
 ]
 
@@ -49,7 +53,13 @@ export default function WhatWeDo() {
               className="bg-white p-4 sm:p-6 hover:bg-white transition-all duration-300 group shadow-[0_0_20px_rgba(15,23,42,0.10)] hover:shadow-[0_0_20px_rgba(15,23,42,0.12)] rounded-md animate-scale-in"
               style={{ animationDelay: `${index * 80 + 120}ms` }}
             >
-              <div className="w-full h-32 sm:h-40 md:h-44 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax rounded-t-md" data-parallax="0.03">
+              <a
+                href={capability.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full h-32 sm:h-40 md:h-44 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax rounded-t-md" data-parallax="0.03"
+                aria-label={`View ${capability.title}`}
+              >
                 <Image
                   src={capability.image}
                   alt={`${capability.title} - ${capability.category}`}
@@ -58,7 +68,7 @@ export default function WhatWeDo() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   loading="lazy"
                 />
-              </div>
+              </a>
               <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{capability.title}</h3>
               <p className="text-sm sm:text-base text-[#4A4F55] font-light leading-relaxed mb-3 sm:mb-4">
                 {capability.description}
