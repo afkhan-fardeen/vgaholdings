@@ -66,6 +66,7 @@ export default function WhatWeDo() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="p-4 sm:p-6">
               <h3 className="text-base sm:text-lg font-medium text-[#1F2A36] mb-2 sm:mb-3 leading-tight">{capability.title}</h3>
