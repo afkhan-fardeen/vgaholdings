@@ -57,14 +57,14 @@ export default function WhatWeDo() {
                 href={capability.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full h-32 sm:h-40 md:h-44 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax rounded-t-md" data-parallax="0.03"
+                className="block w-full h-48 sm:h-56 md:h-64 lg:h-72 relative overflow-hidden mb-3 sm:mb-4 group-hover:shadow-lg transition-shadow duration-300 parallax rounded-t-md" data-parallax="0.03"
                 aria-label={`View ${capability.title}`}
               >
                 <Image
                   src={capability.image}
                   alt={`${capability.title} - ${capability.category}`}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="object-contain object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   loading="lazy"
                 />
