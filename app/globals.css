@@ -40,6 +40,16 @@ html::-webkit-scrollbar {
   object-fit: cover;
 }
 
+/* Mobile video adjustments */
+@media (max-width: 768px) {
+  .video-container video {
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);
