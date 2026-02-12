@@ -7,9 +7,9 @@ export default function News() {
   return (
     <Section id="news">
         <div className="mb-8 sm:mb-12 md:mb-16 text-center">
-          <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
+          {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             News
-          </span>
+          </span> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Latest News</h2>
         </div>
 

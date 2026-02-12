@@ -7,11 +7,11 @@ export default function About() {
       <div className="bg-white shadow-[0_0_20px_rgba(15,23,42,0.10)] rounded-md px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
         <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16 items-start">
           <div className="w-full md:w-1/2">
-            <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
+            {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
               Who We Are
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 parallax-text text-center md:text-left">
-              About Us
+              Who We Are
             </h2>
             <p className="text-sm sm:text-base font-light text-[#4A4F55] leading-relaxed mb-3 sm:mb-4 md:mb-6">
               VGA was established in 2014 in the Kingdom of Bahrain. We engage in a variety of sectors, such as Brokerage, Consultancy, Chemical Distribution, Oil and Gas Pipeline Services and various other investment portfolios.

@@ -57,9 +57,9 @@ export default function Leadership() {
   return (
     <Section ref={sectionRef} id="leaders">
       <div className="mb-8 sm:mb-12 md:mb-16 text-center">
-          <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
+          {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Leadership
-          </span>
+          </span> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">Meet Our Leaders</h2>
         </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12">

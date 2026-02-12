@@ -39,9 +39,9 @@ export default function Portfolio() {
     <Section id="portfolio">
       <div className="bg-white shadow-[0_0_20px_rgba(15,23,42,0.10)] rounded-md px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
         <div className="mb-8 sm:mb-12 md:mb-16 text-center">
-          <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
+          {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
-          </span>
+          </span> */}
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
