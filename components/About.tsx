@@ -10,7 +10,7 @@ export default function About() {
             {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
               Who We Are
             </span> */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 parallax-text text-center md:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#d4af37] mb-4 parallax-text text-center md:text-left">
               Who We Are
             </h2>
             <p className="text-sm sm:text-base font-light text-[#4A4F55] leading-relaxed mb-3 sm:mb-4 md:mb-6">
