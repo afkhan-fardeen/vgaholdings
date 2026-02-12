@@ -106,7 +106,7 @@ export default function Clients() {
 
   return (
     <Section id="clients">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-8 sm:mb-12 text-center animate-fade-up anim-delay-100 parallax-text">
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#d4af37] mb-8 sm:mb-12 text-center animate-fade-up anim-delay-100 parallax-text">
         Meet Our Clients
       </h2>
 

@@ -42,7 +42,7 @@ export default function Portfolio() {
           {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Portfolio
           </span> */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 animate-fade-up anim-delay-100 parallax-text">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#d4af37] mb-4 animate-fade-up anim-delay-100 parallax-text">
             Investment Portfolio
           </h2>
           <p className="text-sm sm:text-base font-light text-[#4A4F55] max-w-4xl mb-4 mx-auto leading-relaxed">

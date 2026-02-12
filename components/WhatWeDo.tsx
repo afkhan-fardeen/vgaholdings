@@ -43,7 +43,7 @@ export default function WhatWeDo() {
           {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4">
             Capabilities
           </span> */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] animate-fade-up anim-delay-100 parallax-text">What We Do</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#d4af37] animate-fade-up anim-delay-100 parallax-text">What We Do</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 max-w-7xl mx-auto">
