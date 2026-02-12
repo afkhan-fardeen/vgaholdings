@@ -20,9 +20,9 @@ export default function StealthVideo() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
+            {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
               Technology
-            </span>
+            </span> */}
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#1F2A36] mb-4 parallax-text text-center md:text-left">
               Stealth-Lock - The fastest mechanical pipeline in the world
             </h2>
