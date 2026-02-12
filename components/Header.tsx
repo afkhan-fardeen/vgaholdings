@@ -24,17 +24,18 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2" aria-label="VGA Holdings Home">
-          <Image 
-            src="/logos/vgalogo.png" 
-            alt="VGA Holdings Logo" 
-            width={400}
-            height={400}
-            className="h-12 sm:h-14 w-auto"
-            priority
-            sizes="(max-width: 640px) 56px, (max-width: 768px) 64px, 80px"
-          />
-        </Link>
+     <Link href="/" className="flex items-center gap-2" aria-label="VGA Holdings Home">
+  <Image 
+    src="/logos/vgalogo.png"
+    alt="VGA Holdings Logo"
+    width={400}
+    height={400}
+    className="h-16 sm:h-20 lg:h-24 w-auto"
+    priority
+    sizes="(max-width: 640px) 64px, (max-width: 1024px) 80px, 96px"
+  />
+</Link>
+
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Main navigation">
