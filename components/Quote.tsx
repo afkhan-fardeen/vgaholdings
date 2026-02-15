@@ -5,12 +5,22 @@ export default function Quote() {
   return (
     <Section fullWidth containerClassName="max-w-none w-full px-0 sm:px-0 mx-0">
       <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] items-stretch">
-        <div className="relative w-full h-full min-h-[100svh] bg-[#E5E7EB] overflow-hidden">
+        {/* <div className="relative w-full h-full min-h-[100svh] bg-[#E5E7EB] overflow-hidden"> */}
+        <div
+  className="
+    relative w-full bg-[#E5E7EB] overflow-hidden
+    min-h-[100svh]
+    max-md:min-h-[60svh]
+  "
+>
+
           <Image
             src="/images/infinite.png"
             alt="Infinite"
             fill
-            className="object-cover"
+            // className="object-cover"
+            className="object-cover max-md:object-cover"
+
             sizes="(max-width: 768px) 100vw, 50vw"
             loading="lazy"
           />
