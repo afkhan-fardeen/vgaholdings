@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12">
           {reasons.map((reason, index) => (
-            <div key={index} className="animate-scale-in" style={{ animationDelay: `${index * 90 + 120}ms` }}>
+            <div key={index} className="bg-white shadow-[0_4px_20px_rgba(15,23,42,0.10)] rounded-md p-6 sm:p-8 hover:shadow-[0_4px_25px_rgba(15,23,42,0.15)] transition-all duration-300 animate-scale-in" style={{ animationDelay: `${index * 90 + 120}ms` }}>
               <div className="mb-3 sm:mb-4 md:mb-6 text-[#d4af37]">
                 <iconify-icon icon={reason.icon} width="48" height="48" stroke-width="1.5" className="sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20" />
               </div>
