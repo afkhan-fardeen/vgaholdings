@@ -12,7 +12,7 @@ export default function Contact() {
           Say hello
         </h2>
         <div className="flex flex-col md:flex-row items-center md:items-start justify-center gap-8 sm:gap-10 md:gap-14 text-sm sm:text-base font-light text-white/80 text-center md:text-left">
-          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto bg-white/10 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] rounded-md p-4 sm:p-6 hover:shadow-[0_4px_25px_rgba(0,0,0,0.4)] transition-all duration-300">
             <iconify-icon icon="solar:phone-linear" width="28" height="28" className="text-[#d4af37] sm:w-9 sm:h-9 md:w-10 md:h-10" stroke-width="1.5" />
             <div className="text-center md:text-left">
               <h3 className="text-xs sm:text-sm font-medium text-white/90 mb-1">Switchboard</h3>
@@ -22,7 +22,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="hidden md:block w-px h-20 bg-white/20" />
-          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto max-w-sm">
+          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto max-w-sm bg-white/10 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] rounded-md p-4 sm:p-6 hover:shadow-[0_4px_25px_rgba(0,0,0,0.4)] transition-all duration-300">
             <iconify-icon icon="solar:map-point-linear" width="28" height="28" className="text-[#d4af37] sm:w-9 sm:h-9 md:w-10 md:h-10" stroke-width="1.5" />
             <div className="text-center md:text-left">
               <p className="text-sm sm:text-base leading-relaxed text-white/80">
@@ -32,7 +32,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="hidden md:block w-px h-20 bg-white/20" />
-          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-start gap-3 sm:gap-4 w-full md:w-auto bg-white/10 backdrop-blur-sm shadow-[0_4px_20px_rgba(0,0,0,0.3)] rounded-md p-4 sm:p-6 hover:shadow-[0_4px_25px_rgba(0,0,0,0.4)] transition-all duration-300">
             <iconify-icon icon="solar:letter-linear" width="28" height="28" className="text-[#d4af37] sm:w-9 sm:h-9 md:w-10 md:h-10" stroke-width="1.5" />
             <div className="text-center md:text-left">
               <h3 className="text-xs sm:text-sm font-medium text-white/90 mb-1">Email</h3>

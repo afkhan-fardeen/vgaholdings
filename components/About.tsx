@@ -3,9 +3,12 @@ import Section from '@/components/Section'
 
 export default function About() {
   return (
-    <Section id="about">
-      <div className="bg-white shadow-[0_0_20px_rgba(15,23,42,0.10)] rounded-md px-6 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
-        <div className="flex flex-col md:flex-row gap-8 sm:gap-12 md:gap-16 items-start">
+    <Section
+      id="about"
+      containerClassName="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12"
+    >
+      <div className="bg-white shadow-[0_4px_20px_rgba(15,23,42,0.10)] rounded-md overflow-hidden">
+        <div className="flex flex-col md:flex-row gap-8 sm:gap-12 items-start p-6 sm:p-8 md:p-10">
           <div className="w-full md:w-1/2">
             {/* <span className="block text-xs font-semibold tracking-widest text-[#d4af37] uppercase mb-4 sm:mb-6 text-center md:text-left">
               Who We Are

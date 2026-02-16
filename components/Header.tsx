@@ -22,23 +22,22 @@ export default function Header() {
       className="sticky top-0 z-50 bg-black/95 backdrop-blur-md"
       role="banner"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-     <Link href="/" className="flex items-center gap-2" aria-label="VGA Holdings Home">
-  <Image 
-    src="/logos/vgalogo.png"
-    alt="VGA Holdings Logo"
-    width={400}
-    height={400}
-    className="h-16 sm:h-20 lg:h-24 w-auto"
-    priority
-    sizes="(max-width: 640px) 64px, (max-width: 1024px) 80px, 96px"
-  />
-</Link>
-
+        <Link href="/" className="flex items-center gap-2 pl-2 pr-4" aria-label="VGA Holdings Home">
+          <Image 
+            src="/logos/vgalogo.png"
+            alt="VGA Holdings Logo"
+            width={400}
+            height={400}
+            className="h-20 sm:h-24 lg:h-28 w-auto"
+            priority
+            sizes="(max-width: 640px) 80px, (max-width: 1024px) 96px, 112px"
+          />
+        </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6 lg:gap-8" aria-label="Main navigation">
+        <nav className="hidden md:flex items-center justify-between gap-8" aria-label="Main navigation">
           {navItems.map((item) => (
             <a
               key={item.href}
@@ -52,7 +51,7 @@ export default function Header() {
 
         {/* Mobile Menu Icon */}
         <button 
-          className="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:ring-offset-2 focus:ring-offset-black rounded"
+          className="md:hidden text-white p-2 focus:outline-none focus:ring-2 focus:ring-[#d4af37] focus:ring-offset-2 focus:ring-offset-black rounded ml-auto"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
           aria-expanded={mobileMenuOpen}
