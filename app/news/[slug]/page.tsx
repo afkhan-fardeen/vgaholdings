@@ -69,7 +69,7 @@ export default function NewsPage({ params }: { params: { slug: string } }) {
       : imageCount === 2
         ? 'grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8'
         : 'grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 mb-6 sm:mb-8'
-  const itemClass = imageCount <= 1 ? 'relative w-full aspect-[16/9]' : 'relative w-full aspect-[4/3]'
+  const itemClass = imageCount <= 1 ? 'relative w-full aspect-[16/9] max-w-xl mx-auto' : 'relative w-full aspect-[4/3]'
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },

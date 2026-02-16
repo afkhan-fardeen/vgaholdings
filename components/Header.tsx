@@ -22,9 +22,9 @@ export default function Header() {
       className="sticky top-0 z-50 bg-black/95 backdrop-blur-md"
       role="banner"
     >
-      <div className="w-full px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 h-18 sm:h-20 md:h-24 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 pl-2 pr-4" aria-label="VGA Holdings Home">
+        <Link href="/" className="flex items-center gap-2 px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-12" aria-label="VGA Holdings Home">
           <Image 
             src="/logos/vgalogo.png"
             alt="VGA Holdings Logo"
